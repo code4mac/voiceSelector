@@ -13,6 +13,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    NSLog(@"%s", __FUNCTION__ );
     // Insert code here to initialize your application
 }
 /*
@@ -20,6 +21,7 @@
  */
 - (void)awakeFromNib
 {
+    NSLog(@"%s", __FUNCTION__ );
     //intiliazed with lenght dynamic value 
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setMenu:statusMenu];
